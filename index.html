@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GothamGo 2014</title>
+  <style>
+    #bg {
+      position: fixed; 
+      top: -50%; 
+      left: -50%; 
+      width: 200%; 
+      height: 200%;
+    }
+    #bg img {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      bottom: 0; 
+      margin: auto; 
+      min-width: 50%;
+      min-height: 50%;
+    }
+#content {
+position: relative; 
+z-index: 1; 
+width: 60%;
+margin: 400px auto; 
+}
+
+h2 { 
+background: black;
+color: white;
+padding: 15px 0;
+position: relative;
+font-family: 'Open Sans',sans-serif;
+}
+
+h2:before, h2:after {
+content: "";
+background: black;
+position: absolute;
+top: 0;
+bottom: 0;
+width: 9999px;
+}
+
+h2:before {
+right: 100%;
+}
+
+h2:after {
+left: 100%;
+}
+
+h2:nth-of-type(1), h2:nth-of-type(1):before, h2:nth-of-type(1):after { background: #dc4916; }
+h2:nth-of-type(2), h2:nth-of-type(2):before, h2:nth-of-type(2):after { background: #6871b1; }
+h2:nth-of-type(3), h2:nth-of-type(3):before, h2:nth-of-type(3):after { background: #d1b935; }
+
+.left-only:after {
+display: none;
+}
+
+.right-only:before {
+width: 20px;
+}
+
+p {
+  font: 20px/2 Georgia, Serif; 
+  color: #FFFFFF;
+  background: rgba(100, 100, 100, 0.5);
+  padding: 10px;
+  margin: -20px;
+}
+
+  </style>
+</head>
+<body>
+  <div id="content">
+	  <h2 class="left-only">GothamGo</h2>
+    <h2 class="right-only">The Empire State of Go</h2>
+    <p>The first Go conference in the best city in the world!
+    Coming late fall 2014.
+    </p>
+  </div>
+  <div id="xpage-wrap">
+  </div>
+  <div id="bg">
+    <img src="images/gophercity.jpg" alt="">
+  </div>
+</body>
+</html>
