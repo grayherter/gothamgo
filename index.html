@@ -2,45 +2,47 @@
 <html>
 <head>
   <title>GothamGo 2014</title>
-    <style type="text/css">
-      #mc_embed_signup{
-        background:#fff; 
-        clear:left; 
-        font:14px Helvetica,Arial,sans-serif; 
-        margin: 10px 0px 10px -20px
-      }
-              /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-              form#mc-embedded-subscribe-form input[type="email"] {
-                  border-color: #4b4b4b;
-                  border-radius: 3px 0 0 3px;
-                  float: left;
-                  font-family: "ostrichrounded";
-                  font-size: 2em;
-                  padding: 12px 10px;
-                  transition: all 0.333s ease-in-out 0s;
-                  width: 72%;
-              }
-              form#mc-embedded-subscribe-form:hover input[type="submit"] {
-                  background: none repeat scroll 0 0 #63c1f8;
-              }
-              form#mc-embedded-subscribe-form:hover input[type="submit"], form#mc-embedded-subscribe-form:hover input[type="email"] {
-                  border-color: #63c1f8;
-              }
-              form#mc-embedded-subscribe-form input[type="submit"] {
-                  background: none repeat scroll 0 0 #4b4b4b;
-                  border-color: #4b4b4b;
-                  border-radius: 0 3px 3px 0;
-                  color: #dc4916; 
-                  display: inline;
-                  float: right;
-                  font-family: "ostrichrounded";
-                  font-size: 2em;
-                  margin: 5px;
-                  padding: 10px;
-                  transition: all 0.333s ease-in-out 0s;
-                  width: 20%;
-              }              </style>
+  <style type="text/css">
+    #mc_embed_signup{
+      background:#fff; 
+      clear:left; 
+      font:14px Helvetica,Arial,sans-serif; 
+      margin: 10px 0px 10px -20px
+    }
+
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    form#mc-embedded-subscribe-form input[type="email"] {
+      border-color: #4b4b4b;
+      border-radius: 3px 0 0 3px;
+      float: left;
+      font-family: "ostrichrounded";
+      font-size: 2em;
+      padding: 12px 10px;
+      transition: all 0.333s ease-in-out 0s;
+      width: 72%;
+    }
+    form#mc-embedded-subscribe-form:hover input[type="submit"] {
+      background: none repeat scroll 0 0 #63c1f8;
+    }
+    form#mc-embedded-subscribe-form:hover input[type="submit"], form#mc-embedded-subscribe-form:hover input[type="email"] {
+      border-color: #63c1f8;
+    }
+    form#mc-embedded-subscribe-form input[type="submit"] {
+      background: none repeat scroll 0 0 #4b4b4b;
+      border-color: #4b4b4b;
+      border-radius: 0 3px 3px 0;
+      color: #dc4916; 
+      display: inline;
+      float: right;
+      font-family: "ostrichrounded";
+      font-size: 2em;
+      margin: 4px;
+      padding: 10px;
+      transition: all 0.333s ease-in-out 0s;
+      width: 20%;
+    }
+  </style>
   <style>
     #bg {
       position: fixed; 
@@ -59,86 +61,85 @@
       min-width: 50%;
       min-height: 50%;
     }
-#content {
-position: relative; 
-z-index: 1; 
-width: 60%;
-margin: auto; 
-margin-top: 400px; 
-}
 
-h2 { 
-background: black;
-color: white;
-padding: 15px 0;
-position: relative;
-font-family: 'Open Sans',sans-serif;
-}
+    #content {
+      position: relative; 
+      z-index: 1; 
+      width: 60%;
+      margin: auto; 
+      margin-top: 375px; 
+    }
 
-h2:before, h2:after {
-content: "";
-background: black;
-position: absolute;
-top: 0;
-bottom: 0;
-width: 9999px;
-}
+    h2 { 
+      background: black;
+      color: white;
+      padding: 15px 0;
+      position: relative;
+      font-family: 'Open Sans',sans-serif;
+    }
 
-h2:before {
-right: 100%;
-}
+    h2:before, h2:after {
+      content: "";
+      background: black;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 9999px;
+    }
 
-h2:after {
-left: 100%;
-}
+    h2:before {
+      right: 100%;
+    }
 
-h2:nth-of-type(1), h2:nth-of-type(1):before, h2:nth-of-type(1):after { 
-  background: #dc4916; 
-}
-h2:nth-of-type(2), h2:nth-of-type(2):before, h2:nth-of-type(2):after { 
-  background: #6871b1; 
-}
-h2:nth-of-type(3), h2:nth-of-type(3):before, h2:nth-of-type(3):after { 
-  background: #d1b935; 
-}
+    h2:after {
+      left: 100%;
+    }
 
-.left-only:after {
-display: none;
-}
+    h2:nth-of-type(1), h2:nth-of-type(1):before, h2:nth-of-type(1):after { 
+      background: #dc4916; 
+    }
+    h2:nth-of-type(2), h2:nth-of-type(2):before, h2:nth-of-type(2):after { 
+      background: #6871b1; 
+    }
+    h2:nth-of-type(3), h2:nth-of-type(3):before, h2:nth-of-type(3):after { 
+      background: #d1b935; 
+    }
 
-.right-only:before {
-width: 20px;
-}
+    .left-only:after {
+      display: none;
+    }
 
-p {
-  font: 20px/2 Georgia, Serif; 
-  color: #FFFFFF;
-  background: rgba(100, 100, 100, 0.7);
-  padding: 10px 20px;
-  margin: 0px 0px 0px -20px;
-}
+    .right-only:before {
+      width: 20px;
+    }
 
+    p {
+      font: 20px/2 Georgia, Serif; 
+      color: #FFFFFF;
+      background: rgba(100, 100, 100, 0.85);
+      padding: 10px 20px;
+      margin: 0px 0px 0px -20px;
+    }
 
-a {
-text-decoration: none;
-color: #FFFFFF;
-background-color: #6871b1; 
-}
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      background-color: #6871b1; 
+    }
 
-a:link {
-}
+    a:link {
+    }
 
-a:visited {
-}
+    a:visited {
+    }
 
-a:hover {
-color: #6871b1; 
-background-color: #FFFFFF;
-}
+    a:hover {
+      color: #6871b1; 
+      background-color: #FFFFFF;
+    }
 
-a:active {
-}
-
+    a:active {
+    }
   </style>
 </head>
 <body>
@@ -153,7 +154,7 @@ a:active {
     and track us on our <a href="http://lanyrd.com/2014/nycgoconf/" target = "_blank">Lanyrd page</a>.
     If you are interested in sponsoring, please contact us at 
     <a href="mailto:info@gothamgo.com?Subject=Sponsor%20GothamGo" target="_top">info@gothamgo.com</a>.
-    Tickets will go on sale in mid-August. If you wish to receive a <em>presale</em> announcement, please provide your email address below.
+    Tickets will go on sale in mid-August. If you wish to receive a <strong>presale announcement</strong>, please provide your email address below.
     </p>
 
        <!-- Begin MailChimp Signup Form -->
